@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</head>
+<body class="container mt-5">
+    <h1>Escolha a Calculadora</h1>
+
+    <!-- Botões para escolher a calculadora -->
+    <button class="btn btn-primary" id="calculadoraDecimalBtn">Calculadora Decimal</button>
+    <button class="btn btn-secondary" id="calculadoraHexadecimalBtn">Calculadora Hexadecimal</button>
+
+    <!-- Seções da calculadora -->
+    <div id="calculadoraDecimal" style="display:none;">
+        <h2>Calculadora Decimal</h2>
+        <input type="number" id="inputDecimal1" class="form-control" placeholder="Digite um número">
+        <input type="number" id="inputDecimal2" class="form-control" placeholder="Digite outro número">
+        <button class="btn btn-primary" id="adicionarDecimal">Adicionar</button>
+        <button class="btn btn-secondary" id="subtrairDecimal">Subtrair</button>
+        <button class="btn btn-success" id="multiplicarDecimal">Multiplicar</button>
+        <button class="btn btn-danger" id="dividirDecimal">Dividir</button>
+        <p id="resultadoDecimal"></p>
+    </div>
+
+    <div id="calculadoraHexadecimal" style="display:none;">
+        <h2>Calculadora Hexadecimal</h2>
+        <input type="number" id="inputHex1" class="form-control" placeholder="Digite um número">
+        <input type="number" id="inputHex2" class="form-control" placeholder="Digite outro número">
+        <button class="btn btn-primary" id="adicionarHex">Adicionar</button>
+        <button class="btn btn-secondary" id="subtrairHex">Subtrair</button>
+        <button class="btn btn-success" id="multiplicarHex">Multiplicar</button>
+        <button class="btn btn-danger" id="dividirHex">Dividir</button>
+        <p id="resultadoHex"></p>
+    </div>
+
+    <script type="module" src="dist/calculadora.js"></script> <!-- Script compilado de calculadora.ts -->
+</body>
+</html>
